@@ -68,7 +68,7 @@ header .containerCart .containerLength {
 header .containerCart .containerLength img {
   transform: scale(0.1);
   position: absolute;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 header .containerCart .containerLength .cantCart {
   position: absolute;
