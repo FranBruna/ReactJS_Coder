@@ -1,6 +1,6 @@
 import "./style.css";
 import NavBar from "./components/header/NavBar";
-import CardItem from "./components/components item/CardItem";
+import CardItem from "./components/componenteItem/CardItem";
 function App() {
   return (
     <>

@@ -1,4 +1,4 @@
-import cartWhite from "../../../src/img/cartWhite.svg";
+import cartWhite from "../../img/cart-white.svg";
 const ButtonAddCart = () => {
   return (
     <button id="AddCart">
