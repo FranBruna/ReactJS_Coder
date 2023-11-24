@@ -1,11 +1,10 @@
 const productos = [
-  //placas de video
   {
     id: 1,
     title: "Agarra Cortinas flor",
     description: "Flor tejida a crochet con hilo de algodon de excelente calidad",
     stock: 10,
-    type: "flor de crochet",
+    type: "Agarra Cortinas",
     imageProduct: {
       firtsImage: "https://i.pinimg.com/474x/52/cf/22/52cf220ae9d3b7cc14f9654b5df4aa1e.jpg",
       secondImage: "https://i.pinimg.com/474x/75/b3/c4/75b3c456e03bd27b373ecd44a5055f11.jpg",
@@ -19,7 +18,7 @@ const productos = [
     description:
       "El atrapasueños puede colocarse como elemento decorativo casi en cualquier parte de la casa. Sin embargo, este amuleto está pensado para salvaguardar nuestros sueños y alejar las malas vibraciones",
     stock: 7,
-    type: "atrapa sueños",
+    type: "Atrapa Sueños",
     imageProduct: {
       firtsImage:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRContHX_fJiKvuhMpdspoB3AyJIYfCZ8yVr1dZHynMrCEbaIvjpXglWk-tr-VR8nvNghU&usqp=CAU",
@@ -35,7 +34,7 @@ const productos = [
     description:
       "Esta lampara esta confeccionada de manera artesanal por nuestra manos con hilo de yute natural. Con una estructura de hierro negro y un tejido realizado con técnicas tradicionales de la cestería, otorga carácter a la iluminación interior tanto como exterior gracias al matiz de luz de su diseño entrelazado ",
     stock: 20,
-    type: "Lampara Colgante",
+    type: "Lamparas",
     imageProduct: {
       firtsImage: "https://http2.mlstatic.com/D_NQ_NP_2X_632681-MLA70650479233_072023-F.webp",
       secondImage:
@@ -50,7 +49,7 @@ const productos = [
     description:
       "Tapiz Amapola tejido en macramé con hilos de algodón, teñido artesanal en color vicuña-gris perla.",
     stock: 6,
-    type: "Tapiz macrame",
+    type: "Tapiz",
     imageProduct: {
       firtsImage: "https://m.media-amazon.com/images/I/51YDvjUGaLL._AC_UF894,1000_QL80_.jpg",
       secondImage: "https://http2.mlstatic.com/D_NQ_NP_2X_908243-MLA54699221190_032023-F.webp",

@@ -3,14 +3,22 @@ import fetchSimulation from "../../utils/fetchSimulation";
 import productos from "../../utils/products";
 import { useState, useEffect } from "react";
 import "../../styles/containerCardsItems.css";
+import { useParams } from "react-router-dom";
 
 const ContainerCardItems = () => {
   const [datos, setDatos] = useState([]);
+  const { idCategory } = useParams();
   useEffect(() => {
-    fetchSimulation(productos, 2000)
-      .then((resp) => setDatos(resp))
-      .catch((error) => console.log(error));
-  }, []);
+    if (idCategory === undefined) {
+      fetchSimulation(productos, 2000)
+        .then((resp) => setDatos(resp))
+        .catch((error) => console.log(error));
+    } else {
+      fetchSimulation(productos.filter((filter) => filter.type === idCategory))
+        .then((resp) => setDatos(resp))
+        .catch((error) => console.log(error));
+    }
+  }, [idCategory]);
 
   return (
     <div className="containerCardItems">
