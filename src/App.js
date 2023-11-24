@@ -1,10 +1,10 @@
 import "./style.css";
 import NavBar from "./components/header/NavBar";
-import CardItem from "./components/componenteItem/CardItem";
+import ContainerCardItems from "./components/componenteItem/ContainerCardItems";
 function App() {
   return (
     <>
-      <CardItem />
+      <ContainerCardItems />
       <NavBar />;
     </>
   );
