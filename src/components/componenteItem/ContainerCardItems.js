@@ -2,6 +2,7 @@ import CardItem from "./CardItem";
 import fetchSimulation from "../../utils/fetchSimulation";
 import productos from "../../utils/products";
 import { useState, useEffect } from "react";
+import "../../styles/containerCardsItems.css";
 
 const ContainerCardItems = () => {
   const [datos, setDatos] = useState([]);
@@ -12,7 +13,7 @@ const ContainerCardItems = () => {
   }, []);
 
   return (
-    <>
+    <div className="containerCardItems">
       {datos.map((product) => (
         <CardItem
           key={product.id}
@@ -23,7 +24,7 @@ const ContainerCardItems = () => {
           precio={product.price}
         />
       ))}
-    </>
+    </div>
   );
 };
 export default ContainerCardItems;
