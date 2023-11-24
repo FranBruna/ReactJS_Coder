@@ -36,10 +36,10 @@ const DetailsItem = () => {
 
             <div className="containerRigth">
               <Description
-                title={items.title}
-                parrafo={items.description}
-                cantidad={items.stock}
-                precio={items.price}
+                title={datos[0].title}
+                parrafo={datos[0].description}
+                cantidad={datos[0].stock}
+                precio={datos[0].price}
               />
 
               <div className="buttons">
