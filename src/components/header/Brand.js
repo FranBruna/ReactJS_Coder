@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Brand = () => {
   return (
-    <Link to="/">
+    <Link to="">
       <img src={brand} alt="Mia Tutina" title="Mia Tutina"></img>
     </Link>
   );
