@@ -17,6 +17,7 @@ const NavBar = () => {
             itemDos="Agarra Cortinas"
             itemTres="Atrapa Sueños"
             itemCuatro="Tapiz"
+            itemCinco="Almohadones"
           />
         </nav>
 
