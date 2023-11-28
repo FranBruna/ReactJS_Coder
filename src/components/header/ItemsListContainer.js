@@ -18,6 +18,9 @@ const ItemListContainer = (props) => {
       <li>
         <Link to="category/Tapiz">{props.itemCuatro}</Link>
       </li>
+      <li>
+        <Link to="category/Almohadones">{props.itemCinco}</Link>
+      </li>
     </ul>
   );
 };

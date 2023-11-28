@@ -56,6 +56,21 @@ const productos = [
     },
     price: 50000,
   },
+  {
+    id: 5,
+    title: "Almohadon Redo",
+    description:
+      "El atrapasueños puede colocarse como elemento decorativo casi en cualquier parte de la casa. Sin embargo, este amuleto está pensado para salvaguardar nuestros sueños y alejar las malas vibraciones",
+    stock: 7,
+    type: "Almohadones",
+    imageProduct: {
+      firtsImage:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRContHX_fJiKvuhMpdspoB3AyJIYfCZ8yVr1dZHynMrCEbaIvjpXglWk-tr-VR8nvNghU&usqp=CAU",
+      secondImage:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsar76pk4l_x1uObznV8u8cipHKWB5G0277Q&usqp=CAU",
+    },
+    price: 8000,
+  },
 ];
 
 export default productos;
