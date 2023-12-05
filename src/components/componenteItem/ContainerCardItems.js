@@ -1,4 +1,4 @@
-// import CardItem from "./CardItem";
+import CardItem from "./CardItem";
 import fetchSimultion from "../../utils/fetchSimulation";
 import productos from "../../utils/products";
 import { useState, useEffect } from "react";

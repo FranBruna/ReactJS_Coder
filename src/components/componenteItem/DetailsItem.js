@@ -6,8 +6,8 @@ import fetchSimultion from "../../utils/fetchSimulation";
 import productos from "../../utils/products";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import MoonLoader from "react-spinners/ClipLoader";
-
+import MoonLoader from "react-spinners";
+import ItemCart from "../../styles/itemCart";
 const DetailsItem = () => {
   const [datos, setDatos] = useState([]);
   const { idItem } = useParams();
