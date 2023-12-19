@@ -1,5 +1,6 @@
 import fetchSimultion from "../../utils/fetchSimulation";
-import productos from "../../utils/products";
+import productos, { getProducts, getProductsByCategory } from "../../utils/products";
+
 import { useState, useEffect } from "react";
 import CardItem from "./CardItem";
 import "../../styles/containerCardsItems.css";

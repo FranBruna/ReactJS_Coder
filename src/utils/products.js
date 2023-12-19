@@ -73,4 +73,29 @@ const productos = [
   },
 ];
 
+export const getProducts = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(productos);
+    }, 2000);
+  });
+};
+
+export const getProductById = (id) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const productoFiltrado = productos.find((prod) => prod.id === parseInt(id));
+      resolve(productoFiltrado);
+    }, 2000);
+  });
+};
+
+export const getProductsByCategory = (category) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const productosFiltrados = productos.filter((prod) => prod.type === category);
+      resolve(productosFiltrados);
+    }, 2000);
+  });
+};
 export default productos;

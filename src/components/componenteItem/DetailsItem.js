@@ -3,51 +3,47 @@ import Description from "./Description";
 import "../../styles/detailsItem.css";
 import ButtonDetalles from "./Buttondetalles";
 import fetchSimultion from "../../utils/fetchSimulation";
-import productos from "../../utils/products";
+import productos, { getProductById } from "../../utils/products";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import MoonLoader from "react-spinners/ClipLoader";
 
 const DetailsItem = () => {
   const [datos, setDatos] = useState([]);
+  const [loading, setLoading] = useState(true);
   const { idItem } = useParams();
 
   useEffect(() => {
-    setDatos([]);
-
-    fetchSimultion(
-      productos.filter((flt) => flt.id === idItem),
-      2000
-    )
-      .then((resp) => setDatos(resp))
-      .catch((error) => console.log(error));
+    setLoading(true);
+    getProductById(idItem)
+      .then((prod) => setDatos(prod))
+      .catch((err) => console.log(err))
+      .finally(() => setLoading(false));
   }, [idItem]);
 
   return (
     <div className="detailsItem">
-      {datos.length === 0 ? (
+      {loading ? (
         <MoonLoader color="#5b00fb" />
       ) : (
-        datos.map((items) => (
-          <>
-            <div className="containerLeft">
-              <Image imagen={items.imageProduct.firtsImage} />
-            </div>
+        <>
+          <div className="containerLeft">
+            <Image imagen={datos.imageProduct.firtsImage} />
+          </div>
 
-            <div className="containerRigth">
-              <Description
-                title={datos[0].title}
-                parrafo={datos[0].description}
-                cantidad={datos[0].stock}
-                precio={datos[0].price}
-              />
+          <div className="containerRigth">
+            <Description
+              title={datos.title}
+              parrafo={datos.description}
+              cantidad={datos.stock}
+              precio={datos.price}
+            />
 
-              <div className="buttons">
-                <ButtonDetalles txt="Agregar al carrito" />
-              </div>
+            <div className="buttons">
+              <ButtonDetalles txt="Agregar al carrito" />
             </div>
-          </>
-        ))
+          </div>
+        </>
       )}
     </div>
   );
